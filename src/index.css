@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-b from-mystic-950 to-black text-white min-h-screen;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-lg;
+  }
+  
+  .nav-link {
+    @apply px-4 py-2 rounded-md hover:bg-mystic-800/50 transition-colors;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-mystic-600 hover:bg-mystic-700 rounded-lg transition-colors;
+  }
+}
